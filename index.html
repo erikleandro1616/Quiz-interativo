@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Interativo XD</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+  <!--------------------container inicio------------------------>
+
+  <div class="container">
+    <h1>Quiz Interativo</h1>
+
+
+    <div id="start-screen">
+      <input type="text" id="username" placeholder="Digite seu nome" required>
+      <button onclick="startQuiz()">Iniciar Quiz</button>
+    </div>
+
+   <!--------------------container questões------------------>   
+
+    <div id="quiz-screen" style="display: none;">
+      <div id="question-container">
+        <h2 id="question-text"></h2>
+        <div id="options"></div>
+      </div>
+      <button id="next-btn" onclick="nextQuestion()" disabled>Próxima</button>
+    </div>
+
+    <!--------------------container resultado---------------------->
+
+    <div id="result-screen" style="display: none;">
+
+        <h2>Resultado de <span id="user-result-name"></span></h2>
+
+      <div class="bloco">
+        <div class="texto">
+        <p>✅Acertos: <span id="correct-count"></span></p>
+        <p>❌Erros: <span id="wrong-count"></span></p>
+        <p>📊Aproveitamento: <span id="percentage"></span>%</p>
+        </div>
+
+        <div>
+        <h3 id="feedback-message"></h3>
+        <canvas id="resultChart" width="300" height="300"></canvas>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!------------------------------rodape---------------------->
+
+  <footer id="rodape">
+        <p> Criado por Erik Leandro, Luiz Davi, Marcelly fonseca e Raimundo Netto &copy;2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

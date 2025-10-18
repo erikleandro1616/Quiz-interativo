@@ -1,0 +1,146 @@
+/*----------Design Texto----------------*/
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("img/img1.jpg");
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+/*-------------design grafico--------------*/
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #181818;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(255, 0, 242, 0.5);
+  border-radius: 8px;
+  margin-top: 70px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgb(128, 128, 128);
+}
+
+/*--------------design botões-------------------*/
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: #181818;
+  color: #ffffff;
+}
+
+button:hover{
+color: rgb(255, 255, 0);
+border: 2px solid rgb(255, 255, 0);
+background: rgb(35, 2, 48);
+transform: scale(1.2); /*aumentar imagem quando mouse passar em cima*/
+transition: transform 0.3s ease; /*transição suave*/
+}
+
+
+/*------------------botões de opções-----------------*/
+.option {
+  background-color: #181818;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid gray;
+  color: #ffffff;
+}
+
+.option:hover {
+color: rgb(255, 255, 0);
+border: 2px solid rgb(255, 255, 0);
+background: rgb(74, 55, 82);
+transform: scale(1.05); /*aumentar imagem quando mouse passar em cima*/
+transition: transform 0.3s ease; /*transição suave*/
+}
+
+
+.option.selected {
+color: rgb(255, 255, 0);
+border: 2px solid rgb(255, 255, 0);
+background: rgb(36, 2, 49);
+transform: scale(1.1); /*aumentar imagem quando mouse passar em cima*/
+transition: transform 0.3s ease; /*transição suave*/
+}
+
+/*------------------ajuste do container resultado------------------*/
+
+.bloco{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;  /*controla o espaço entre a parte texto e a parte gráfico*/
+  padding: 20px;
+}
+
+.texto{
+  max-width: 300px;
+  font-family: Poppins, sans-serif;
+}
+
+/*-------------ajuste do gráfico pizza----------------*/
+
+#resultChart{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  flex: 1;
+  max-width: 200px;
+}
+
+#result-screen{
+  display: justify;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1;
+}
+
+/*----------------rodapé-----------------*/
+
+footer{
+  background-color: #333;
+  height: 54px;
+  text-align: center;
+  margin-top: 12%;
+  box-shadow: 0px 0px 15px rgba(255, 0, 242, 0.7);
+  flex-shrink: 0;  /*impede que o rodape encolha*/
+}
+
+#rodape{
+  text-align: center;
+  bottom: 0;
+  padding: 10px;
+  font-size: 17px;
+  font-family: Georgia, sans-serif;
+
+}
+
+
